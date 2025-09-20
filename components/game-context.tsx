@@ -112,7 +112,7 @@ export function GameProvider({ children }: { children: React.ReactNode }) {
       timerRef.current = setInterval(() => {
         setState(prevState => {
           const newTimeRemaining = prevState.timeRemaining - 1
-          
+
           if (newTimeRemaining <= 0) {
             // Time's up - finish game with timeout
             finishGame('timeout')
@@ -122,7 +122,7 @@ export function GameProvider({ children }: { children: React.ReactNode }) {
               gameStatus: 'timeout'
             }
           }
-          
+
           return {
             ...prevState,
             timeRemaining: newTimeRemaining
@@ -147,6 +147,14 @@ export function GameProvider({ children }: { children: React.ReactNode }) {
   const questions = useMemo(() => {
     const allQuestions: Question[] = []
     const maxDoors = 50 // 10 rooms * 5 doors each
+    const usedQuestionsByLevel: { [level: number]: Set<number> } = {}
+
+    // Initialize used questions tracking for each level
+    if (questionsData?.levels) {
+      questionsData.levels.forEach((levelData) => {
+        usedQuestionsByLevel[levelData.level] = new Set()
+      })
+    }
 
     for (let doorIndex = 0; doorIndex < maxDoors; doorIndex++) {
       const roomNumber = Math.floor(doorIndex / 5) + 1 // Rooms 1-10
@@ -154,9 +162,35 @@ export function GameProvider({ children }: { children: React.ReactNode }) {
       const levelData = questionsData?.levels?.[levelIndex]
 
       if (levelData && levelData.questions && levelData.questions.length > 0) {
-        // Randomly select a question from this level
-        const randomIndex = doorIndex;
-        allQuestions.push(levelData.questions[randomIndex])
+        // Initialize used questions tracking for this level if not exists
+        if (!usedQuestionsByLevel[levelData.level]) {
+          usedQuestionsByLevel[levelData.level] = new Set()
+        }
+
+        const levelQuestions = levelData.questions
+        const usedQuestions = usedQuestionsByLevel[levelData.level]
+
+        // Get available questions (not yet used)
+        const availableIndices = levelQuestions
+          .map((_, index) => index)
+          .filter(index => !usedQuestions.has(index))
+
+        if (availableIndices.length > 0) {
+          // Randomly select from available questions
+          const randomIndex = availableIndices[Math.floor(Math.random() * availableIndices.length)]
+          const selectedQuestion = levelQuestions[randomIndex]
+
+          // Mark this question as used
+          usedQuestions.add(randomIndex)
+          usedQuestionsByLevel[levelData.level] = usedQuestions
+
+          allQuestions.push(selectedQuestion)
+        } else {
+          // If all questions in this level are used, reset and start over
+          usedQuestionsByLevel[levelData.level] = new Set()
+          const fallbackIndex = Math.floor(Math.random() * levelQuestions.length)
+          allQuestions.push(levelQuestions[fallbackIndex])
+        }
       } else {
         // Fallback if no questions available for this level
         allQuestions.push({
