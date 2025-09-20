@@ -1,0 +1,158 @@
+{
+  "levels": [
+    {
+      "level": 1,
+      "questions": [
+        { "id": 1, "prompt": "What does HTML stand for?", "options": ["HyperText Markup Language", "High-Tech Modern Language", "Home Tool Markup Language", "Hyperlink and Text Markup Language"], "correctIndex": 0, "isTrap": false },
+        { "id": 2, "prompt": "What does CPU stand for?", "options": ["Central Program Utility", "Central Processing Unit", "Computer Personal Unit", "Core Power User"], "correctIndex": 1, "isTrap": false },
+        { "id": 3, "prompt": "Which of these is volatile memory (loses data when power is off)?", "options": ["ROM", "SSD", "RAM", "USB Drive"], "correctIndex": 2, "isTrap": true },
+        { "id": 4, "prompt": "What is the purpose of a URL?", "options": ["To run a computer program", "To connect to a printer", "To style a webpage", "To locate a resource on the internet"], "correctIndex": 3, "isTrap": false },
+        { "id": 5, "prompt": "What is a bug in programming?", "options": ["A type of computer virus", "A hardware monitoring tool", "An error or flaw in a program", "A feature that is undocumented"], "correctIndex": 2, "isTrap": true },
+        { "id": 6, "prompt": "Which tag is used to create hyperlinks?", "options": ["<link>", "<h1>", "<href>", "<a>"], "correctIndex": 3, "isTrap": false },
+        { "id": 7, "prompt": "What does BIOS stand for?", "options": ["Binary Input Output System", "Basic Internal Operating System", "Base Internal Output System", "Basic Input Output System"], "correctIndex": 3, "isTrap": false },
+        { "id": 8, "prompt": "Which device is used to type text into a computer?", "options": ["Monitor", "Printer", "Speaker", "Keyboard"], "correctIndex": 3, "isTrap": false },
+        { "id": 9, "prompt": "Which of these is an operating system?", "options": ["Intel", "Windows", "HTML", "Python"], "correctIndex": 1, "isTrap": true },
+        { "id": 10, "prompt": "What does GUI stand for?", "options": ["Graphical Utility Interaction", "Graphical User Interface", "General User Interface", "Global User Interface"], "correctIndex": 1, "isTrap": false }
+      ]
+    },
+    {
+      "level": 2,
+      "questions": [
+        { "id": 11, "prompt": "Which technology is used to make wireless local area networks?", "options": ["Wi-Fi", "4G", "Ethernet", "Bluetooth"], "correctIndex": 0, "isTrap": false },
+        { "id": 12, "prompt": "What is CSS used for?", "options": ["Handling server logic", "Querying databases", "Styling web pages", "Structuring web pages"], "correctIndex": 2, "isTrap": true },
+        { "id": 13, "prompt": "What does IP stand for?", "options": ["Internet Provider", "Internet Protocol", "Information Processing", "Internal Protocol"], "correctIndex": 1, "isTrap": false },
+        { "id": 14, "prompt": "Who developed Python?", "options": ["Microsoft", "Facebook", "Google", "Python Software Foundation"], "correctIndex": 3, "isTrap": false },
+        { "id": 15, "prompt": "What is the extension of a JavaScript file?", "options": [".js", ".script", ".java", ".j"], "correctIndex": 0, "isTrap": true },
+        { "id": 16, "prompt": "Which HTML tag displays an image?", "options": ["<img>", "<pic>", "<src>", "<image>"], "correctIndex": 0, "isTrap": false },
+        { "id": 17, "prompt": "Which language runs in browsers?", "options": ["Python", "C++", "Java", "JavaScript"], "correctIndex": 3, "isTrap": true },
+        { "id": 18, "prompt": "What does LAN stand for?", "options": ["Logical Access Network", "Limited Area Network", "Local Area Network", "Large Access Network"], "correctIndex": 2, "isTrap": false },
+        { "id": 19, "prompt": "Which CSS property sets text color?", "options": ["text-color", "color", "font-color", "background"], "correctIndex": 1, "isTrap": false },
+        { "id": 20, "prompt": "Which attribute gives alternative text to images?", "options": ["alt", "name", "src", "title"], "correctIndex": 0, "isTrap": false }
+      ]
+    },
+    {
+      "level": 3,
+      "questions": [
+        { "id": 21, "prompt": "What is the main function of an OS?", "options": ["Protect against viruses", "Manage hardware and software", "Browse the internet", "Create spreadsheets"], "correctIndex": 1, "isTrap": false },
+        { "id": 22, "prompt": "What is encapsulation?", "options": ["Hiding unnecessary details", "Creating a new class", "Bundling data & methods together", "Allowing many forms"], "correctIndex": 2, "isTrap": true },
+        { "id": 23, "prompt": "What does SQL stand for?", "options": ["System Query Logic", "Structured Query Language", "Standard Question Language", "Simple Query Language"], "correctIndex": 1, "isTrap": false },
+        { "id": 24, "prompt": "Which is a version control system?", "options": ["Jenkins", "Git", "Apache", "Docker"], "correctIndex": 1, "isTrap": false },
+        { "id": 25, "prompt": "HTTP 404 means?", "options": ["Not Found", "Forbidden", "OK", "Internal Error"], "correctIndex": 0, "isTrap": true },
+        { "id": 26, "prompt": "Which symbol comments in Python?", "options": ["#", "//", "/* */", "<!-- -->"], "correctIndex": 0, "isTrap": false },
+        { "id": 27, "prompt": "Which keyword defines functions in Python?", "options": ["func", "define", "function", "def"], "correctIndex": 3, "isTrap": false },
+        { "id": 28, "prompt": "Which is a NoSQL database?", "options": ["Oracle", "MongoDB", "MySQL", "PostgreSQL"], "correctIndex": 1, "isTrap": true },
+        { "id": 29, "prompt": "What does API stand for?", "options": ["Application Programming Interface", "Automated Program Integration", "Application Protocol Interaction", "Automated Programming Interface"], "correctIndex": 0, "isTrap": false },
+        { "id": 30, "prompt": "Which is used to control code versions?", "options": ["NPM", "Git", "C#", "Python"], "correctIndex": 1, "isTrap": false }
+      ]
+    },
+
+    {
+
+      "level": 4,
+      "questions": [
+        { "id": 31, "prompt": "What is the difference between RAM and a hard drive?", "options": ["RAM is volatile, HDD is non-volatile", "RAM is permanent, HDD is temporary", "RAM is software, HDD is hardware", "There is no difference"], "correctIndex": 0, "isTrap": false },
+        { "id": 32, "prompt": "What is an API?", "options": ["Application Protocol Instance", "Applied Process Integration", "Application Programming Interface", "Automated Program Interaction"], "correctIndex": 2, "isTrap": false },
+        { "id": 33, "prompt": "Which is NOT a DML SQL command?", "options": ["UPDATE", "INSERT", "CREATE", "DELETE"], "correctIndex": 2, "isTrap": true },
+        { "id": 34, "prompt": "What is phishing?", "options": ["A method for cooling CPUs", "A fraudulent attempt to steal data", "A hardware network failure", "A type of malware"], "correctIndex": 1, "isTrap": false },
+        { "id": 35, "prompt": "What is a firewall?", "options": ["A security system to monitor network traffic", "A protocol to transfer files", "A physical barrier for heat", "An antivirus software"], "correctIndex": 0, "isTrap": false },
+        { "id": 36, "prompt": "Which command lists files in Linux?", "options": ["show", "ls", "dir", "list"], "correctIndex": 1, "isTrap": false },
+        { "id": 37, "prompt": "What does CLI stand for?", "options": ["Command Link Interface", "Control Logic Interface", "Command Line Interface", "Computer Level Interface"], "correctIndex": 2, "isTrap": false },
+        { "id": 38, "prompt": "What does HTTP stand for?", "options": ["Hyper Transfer Text Protocol", "HyperText Transfer Protocol", "HyperTool Transfer Protocol", "High Transfer Text Protocol"], "correctIndex": 1, "isTrap": true },
+        { "id": 39, "prompt": "Which is NOT a programming language?", "options": ["HTML", "Java", "C", "Python"], "correctIndex": 0, "isTrap": false },
+        { "id": 40, "prompt": "Which device stores data permanently?", "options": ["Register", "Hard Drive", "RAM", "Cache"], "correctIndex": 1, "isTrap": false }
+      ]
+    },
+    {
+      "level": 5,
+      "questions": [
+        { "id": 41, "prompt": "Which company developed Windows?", "options": ["Apple", "Microsoft", "IBM", "Google"], "correctIndex": 1, "isTrap": false },
+        { "id": 42, "prompt": "Which part is the brain of the computer?", "options": ["Monitor", "RAM", "CPU", "GPU"], "correctIndex": 2, "isTrap": false },
+        { "id": 43, "prompt": "Which device is an output device?", "options": ["Printer", "Keyboard", "Mouse", "Scanner"], "correctIndex": 0, "isTrap": false },
+        { "id": 44, "prompt": "Which tag creates a table row in HTML?", "options": ["<tr>", "<table>", "<td>", "<row>"], "correctIndex": 0, "isTrap": false },
+        { "id": 45, "prompt": "What does DNS stand for?", "options": ["Domain Name System", "Domain Number Server", "Digital Name Server", "Data Network System"], "correctIndex": 0, "isTrap": false },
+        { "id": 46, "prompt": "Which symbol starts an ID selector in CSS?", "options": [".", "@", "#", "$"], "correctIndex": 2, "isTrap": false },
+        { "id": 47, "prompt": "Which is a front-end framework?", "options": ["Django", "Flask", "React", "Node.js"], "correctIndex": 2, "isTrap": false },
+        { "id": 48, "prompt": "Which stores temporary data?", "options": ["SSD", "ROM", "RAM", "HDD"], "correctIndex": 2, "isTrap": false },
+        { "id": 49, "prompt": "Which tag adds a line break?", "options": ["<br>", "<break>", "<lb>", "<line>"], "correctIndex": 0, "isTrap": false },
+        { "id": 50, "prompt": "Which attribute opens link in new tab?", "options": ["target=\"_self\"", "target=\"_blank\"", "href=\"_new\"", "rel=\"_new\""], "correctIndex": 1, "isTrap": false }
+      ]
+    },
+    {
+      "level": 6,
+      "questions": [
+        { "id": 51, "prompt": "Which language is used for Android apps?", "options": ["Python", "C#", "Java", "PHP"], "correctIndex": 2, "isTrap": false },
+        { "id": 52, "prompt": "What does URL stand for?", "options": ["Universal Reference Link", "Uniform Resource Locator", "Unified Routing Link", "Universal Resource Link"], "correctIndex": 1, "isTrap": false },
+        { "id": 53, "prompt": "Which is a markup language?", "options": ["CSS", "HTML", "Java", "Python"], "correctIndex": 1, "isTrap": false },
+        { "id": 54, "prompt": "Which is used for styling web pages?", "options": ["CSS", "HTML", "SQL", "C++"], "correctIndex": 0, "isTrap": true },
+        { "id": 55, "prompt": "Which is not a search engine?", "options": ["Bing", "Chrome", "DuckDuckGo", "Yahoo"], "correctIndex": 1, "isTrap": false },
+        { "id": 56, "prompt": "What is full form of OS?", "options": ["Output System", "Operating System", "Open System", "Optical Server"], "correctIndex": 1, "isTrap": false },
+        { "id": 57, "prompt": "Which is an input device?", "options": ["Monitor", "Printer", "Keyboard", "Projector"], "correctIndex": 2, "isTrap": false },
+        { "id": 58, "prompt": "Which symbol is used for class in CSS?", "options": [".", "#", "@", "$"], "correctIndex": 0, "isTrap": false },
+        { "id": 59, "prompt": "Which creates a list in HTML?", "options": ["<ul>", "<span>", "<div>", "<table>"], "correctIndex": 0, "isTrap": false },
+        { "id": 60, "prompt": "Which type of database is MySQL?", "options": ["NoSQL", "Graph", "Relational", "Document"], "correctIndex": 2, "isTrap": false }
+      ]
+    },
+    {
+      "level": 7,
+      "questions": [
+        { "id": 61, "prompt": "Which is a version control system?", "options": ["React", "Git", "MongoDB", "HTML"], "correctIndex": 1, "isTrap": false },
+        { "id": 62, "prompt": "Which is a back-end language?", "options": ["HTML", "CSS", "Node.js", "Bootstrap"], "correctIndex": 2, "isTrap": false },
+        { "id": 63, "prompt": "Which displays text in HTML?", "options": ["<text>", "<p>", "<div>", "<span>"], "correctIndex": 1, "isTrap": false },
+        { "id": 64, "prompt": "What is used to run JavaScript?", "options": ["Browser", "Compiler", "Server", "Database"], "correctIndex": 0, "isTrap": false },
+        { "id": 65, "prompt": "Which is a database?", "options": ["MongoDB", "HTML", "CSS", "JS"], "correctIndex": 0, "isTrap": false },
+        { "id": 66, "prompt": "Which tag adds a heading?", "options": ["<h1>", "<head>", "<heading>", "<header>"], "correctIndex": 0, "isTrap": false },
+        { "id": 67, "prompt": "Which is a cloud service?", "options": ["AWS", "CSS", "JS", "PHP"], "correctIndex": 0, "isTrap": false },
+        { "id": 68, "prompt": "What does IP stand for?", "options": ["Internet Protocol", "Internal Protocol", "Internet Process", "Information Protocol"], "correctIndex": 0, "isTrap": false },
+        { "id": 69, "prompt": "Which creates structure in web pages?", "options": ["HTML", "CSS", "JS", "PHP"], "correctIndex": 0, "isTrap": false },
+        { "id": 70, "prompt": "Which handles page logic?", "options": ["HTML", "JS", "CSS", "Bootstrap"], "correctIndex": 1, "isTrap": false }
+      ]
+    },
+    {
+      "level": 8,
+      "questions": [
+        { "id": 71, "prompt": "Which of these is a scripting language?", "options": ["JavaScript", "C++", "C", "Java"], "correctIndex": 0, "isTrap": true },
+        { "id": 72, "prompt": "Which controls presentation?", "options": ["CSS", "HTML", "JS", "SQL"], "correctIndex": 0, "isTrap": false },
+        { "id": 73, "prompt": "Which connects computers globally?", "options": ["Internet", "Intranet", "LAN", "WLAN"], "correctIndex": 0, "isTrap": false },
+        { "id": 74, "prompt": "Which stores data permanently?", "options": ["SSD", "RAM", "Cache", "Register"], "correctIndex": 0, "isTrap": false },
+        { "id": 75, "prompt": "Which is an IDE?", "options": ["VS Code", "Google", "YouTube", "Windows"], "correctIndex": 0, "isTrap": false },
+        { "id": 76, "prompt": "Which stores IP mappings?", "options": ["DNS", "HTML", "CSS", "PHP"], "correctIndex": 0, "isTrap": false },
+        { "id": 77, "prompt": "Which adds logic to web pages?", "options": ["JS", "CSS", "HTML", "Bootstrap"], "correctIndex": 0, "isTrap": false },
+        { "id": 78, "prompt": "Which is a protocol?", "options": ["HTTP", "HTML", "CSS", "JS"], "correctIndex": 0, "isTrap": false },
+        { "id": 79, "prompt": "Which is a loop in JS?", "options": ["for", "head", "body", "print"], "correctIndex": 0, "isTrap": false },
+        { "id": 80, "prompt": "Which combines HTML+CSS+JS?", "options": ["Web Page", "Database", "Program", "System"], "correctIndex": 0, "isTrap": false }
+      ]
+    },
+    {
+      "level": 9,
+      "questions": [
+        { "id": 81, "prompt": "Which tag adds a table?", "options": ["<table>", "<tab>", "<tbl>", "<div>"], "correctIndex": 0, "isTrap": false },
+        { "id": 82, "prompt": "Which is a JavaScript framework?", "options": ["React", "HTML", "CSS", "SQL"], "correctIndex": 0, "isTrap": false },
+        { "id": 83, "prompt": "Which stores key-value data?", "options": ["Object", "Array", "Function", "Class"], "correctIndex": 0, "isTrap": false },
+        { "id": 84, "prompt": "Which shows alerts?", "options": ["alert()", "console.log()", "prompt()", "print()"], "correctIndex": 0, "isTrap": false },
+        { "id": 85, "prompt": "Which runs on server?", "options": ["Node.js", "React", "Bootstrap", "CSS"], "correctIndex": 0, "isTrap": false },
+        { "id": 86, "prompt": "Which creates responsive pages?", "options": ["Bootstrap", "Node.js", "Python", "Java"], "correctIndex": 0, "isTrap": false },
+        { "id": 87, "prompt": "Which organizes data?", "options": ["Database", "Compiler", "Interpreter", "Protocol"], "correctIndex": 0, "isTrap": false },
+        { "id": 88, "prompt": "Which language is used for queries?", "options": ["SQL", "CSS", "HTML", "JS"], "correctIndex": 0, "isTrap": false },
+        { "id": 89, "prompt": "Which stores browser data?", "options": ["Cookies", "HTML", "CSS", "PHP"], "correctIndex": 0, "isTrap": false },
+        { "id": 90, "prompt": "Which secures network?", "options": ["Firewall", "Switch", "Hub", "Router"], "correctIndex": 0, "isTrap": false }
+      ]
+    },
+    {
+      "level": 10,
+      "questions": [
+        { "id": 91, "prompt": "Which encrypts network data?", "options": ["SSL", "HTML", "CSS", "JS"], "correctIndex": 0, "isTrap": false },
+        { "id": 92, "prompt": "Which detects malware?", "options": ["Antivirus", "Firewall", "Compiler", "IDE"], "correctIndex": 0, "isTrap": false },
+        { "id": 93, "prompt": "Which ensures data backup?", "options": ["Cloud Storage", "DNS", "Firewall", "Router"], "correctIndex": 0, "isTrap": false },
+        { "id": 94, "prompt": "Which schedules tasks?", "options": ["Cron", "DNS", "Bootstrap", "React"], "correctIndex": 0, "isTrap": false },
+        { "id": 95, "prompt": "Which controls access?", "options": ["Authentication", "Bootstrap", "CSS", "HTML"], "correctIndex": 0, "isTrap": false },
+        { "id": 96, "prompt": "Which handles HTTP requests?", "options": ["Express.js", "React", "MongoDB", "HTML"], "correctIndex": 0, "isTrap": false },
+        { "id": 97, "prompt": "Which stores JSON data?", "options": ["MongoDB", "CSS", "HTML", "Bootstrap"], "correctIndex": 0, "isTrap": false },
+        { "id": 98, "prompt": "Which organizes code?", "options": ["Framework", "DNS", "HTTP", "Bootstrap"], "correctIndex": 0, "isTrap": false },
+        { "id": 99, "prompt": "Which builds Android apps?", "options": ["Android Studio", "Windows", "Chrome", "Linux"], "correctIndex": 0, "isTrap": false },
+        { "id": 100, "prompt": "Which is used for version control?", "options": ["Git", "CSS", "HTML", "JS"], "correctIndex": 0, "isTrap": false }
+      ]
+    }
+
+  ]
+
+}
